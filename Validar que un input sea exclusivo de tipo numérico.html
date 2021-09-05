@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Validar un numero entero posritivo, negativo y fracción decimal
+    </title>
+    <style>
+        h1 { color: pink; font-family: Impact; }
+        body { text-align: center;}
+</style>
+
+
+    <input type="text" name="numero" placeholder="Una vez cualquier tipo de numero" id="numero" value="" class="data" required
+    onkeyup="javascript:validarSiNumero(this.value)" />
+   
+</head>
+<body>
+    <h1>Este campo solo acepta numeros enteros o negativos enteros o fracciones decimal. </h1>
+
+<script>
+    function validarSiNumero(numero){
+    if (!/^([0-9])*$/.test(numero) && !/^-?(0|[1-9]\d*)(?<!-0)$/.test(numero) && !/^(0|[1-9]\d*)?(\.\d+)?(?<=\d)$/.test(numero))
+    alert("El valor " + numero + " no es un número entero, ni fracción y tampoco negativo");
+}
+
+</script>
+
+</body>
+
+</html>

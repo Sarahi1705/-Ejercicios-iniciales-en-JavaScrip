@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Validar un correo electrónico 
+    </title>
+    <hr>
+    <br>
+    <div class = "correo">
+    <input type="text" name="email1" value="" class="data" required>
+    <input type="text" name="email" id="email"   value=""  class="data" required onKeyUp="javascript:validateMail('email')" />
+    </div>
+    </br>
+        <style>
+            h1 { color: rgb(233, 215, 112);}
+            h2 { font-family: Impact;}
+            body { text-align: center;
+                background-color: #e9b7ee;
+            }
+            
+        </style>
+    </head>
+    
+
+
+   
+
+<body>
+    <h1>Escribe tu correo electrónio </h1>
+
+<script>
+  
+  function validateMail(idMail)
+    {
+    	//Creamos un objeto
+    	object=document.getElementById(idMail);
+    	valueForm=object.value;
+
+    	// Patron para el correo
+    	var patron=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
+    	if(valueForm.search(patron)==0)
+    	{
+    		//Mail correcto
+    		object.style.color="#000";
+   		return;
+    	}
+    	//Mail incorrecto
+    	object.style.color="#f00";
+    }
+
+</script>
+
+</body>
+
+</html>

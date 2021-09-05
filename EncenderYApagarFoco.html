@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Encender foco y apagar</title>
+<style>
+    h2 { color: rgb(233, 215, 112);}
+    p{ font-family: Impact;}
+    body { text-align: center;
+        background-color: #e9b7ee;
+    }
+    
+</style>
+</head>
+<body>
+    
+<h2>Qué puedo hacer con JavaScript?</h2>
+<p>JavaScript puede cambiar los valores de los atributos de HTML</p>
+<p>
+Para este ejemplo JS cambia los valores del atributo src (source) de la imagen
+</p>
+<button
+onclick="document.getElementById('myImage').src='prendido.png'">
+Encendido
+</button>
+<img id="myImage" src="apagado.png" style="width: 100px;" />
+<button
+onclick="document.getElementById('myImage').src='apagado.png'">
+Apagado
+</button>
+<hr>
+<h2>Qué puedo hacer con JavaScript?</h2>
+<button
+onclick="document.getElementById('myimagen').src='Hombre.jpg'">
+Hombre
+</button>
+<img id="myimagen" src="mujer.jpg" style="width: 100px;" />
+<button
+onclick="document.getElementById('myimagen').src='mujer.jpg'">
+Mujer
+</button>
+</body>
+</html>

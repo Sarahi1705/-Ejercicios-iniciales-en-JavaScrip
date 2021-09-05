@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>1er. Ejemplo</title>
+</head>
+
+<body>
+<h1 id="header">Esto es JavaScript</h1>
+<script>
+    document.body.appendChild(document.createTextNode('Hola mundo! JS'));
+    var h1 =document.getElementById('header'); // contiene la referencia al tag <h1>
+    h1 = document.getElementsByTagName('h1')[0]; // accediendo al mismo elemento <h1>
+    
+</script>
+  <noscript>Tu navegador no admite JavaScript, o JavaScript esta deshabilitado.</noscript>
+</body>
+
+</html>
